@@ -1,4 +1,4 @@
-const http = new customAjaxlib;
+const http = new customAjaxLib;
 
 // Get Posts
 // http.get('https://jsonplaceholder.typicode.com/posts', function( err, response) {

@@ -1,10 +1,10 @@
-function customAjaxlib() {
+function customAjaxLib() {
     this.http = new XMLHttpRequest();
 
 }
 
 // Make an HTTP GET Request
-customAjaxlib.prototype.get = function(url, callback) {
+customAjaxLib.prototype.get = function(url, callback) {
     this.http.open('GET', url, true);
 
     let self = this;
@@ -19,7 +19,7 @@ customAjaxlib.prototype.get = function(url, callback) {
 }
 
 // Make an HTTP POST Request
-customAjaxlib.prototype.post = function (url, data, callback) {
+customAjaxLib.prototype.post = function (url, data, callback) {
     this.http.open('POST', url, true);
     this.http.setRequestHeader('Content-type', 'application/json');
 
@@ -32,7 +32,7 @@ customAjaxlib.prototype.post = function (url, data, callback) {
 }
 
 // Make an HTTP PUT Request
-customAjaxlib.prototype.put = function (url, data, callback) {
+customAjaxLib.prototype.put = function (url, data, callback) {
     this.http.open('PUT', url, true);
     this.http.setRequestHeader('Content-type', 'application/json');
 
@@ -45,7 +45,7 @@ customAjaxlib.prototype.put = function (url, data, callback) {
 }
 
 // Make an HTTP DELETE Request
-customAjaxlib.prototype.delete = function(url,data, callback) {
+customAjaxLib.prototype.delete = function(url,data, callback) {
     this.http.open('DELETE', url, true);
 
     let self = this;
